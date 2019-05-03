@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <link rel="stylesheet" href="tip.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</head>
+<body>
+  <ons-page>
+      <ons-toolbar class="toolbar"> 
+          <div class="center">Framework Tip Calculator</div>
+      </ons-toolbar>
+      <!-- form section -->
+      <section>
+        <div class="text-div">
+            <input class="text-input text-input--material" placeholder="Bill Amount" type="text" required id="billAmount"> 
+        </div>
+        <div class="slider">
+          <ons-range class="slider-bar" value="18" min="0" max="50" step=".5" id="tipRange"></ons-range>
+          <output id="percentOut">18%</output>
+        </div>
+        <div class="div-button">
+            <ons-button modifier="large" id="btnCalculate">Calculate Tip</ons-button>
+        </div>
+      </section>
+      <!-- result section -->
+      <section>
+        <output id="result"></output>
+      </section>
+  </ons-page>
+<script src="tip.js"></script>
+</body>
+</html>

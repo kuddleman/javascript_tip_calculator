@@ -1,0 +1,19 @@
+section {
+  padding: 8px;
+}
+
+.text-div .slider {
+  margin-bottom: 20px;
+}
+
+.text-input {
+  width: 100%;
+}
+
+.slider-bar {
+  width: 75%;
+}
+
+.div-button {
+  margin-top: 20px;
+}
